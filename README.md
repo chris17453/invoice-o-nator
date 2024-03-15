@@ -11,7 +11,8 @@ pipenv install
 ```
 
 ## USAGE
-``bash
+
+```bash
 python -m invoiceonator -h
 usage: invoiceonator [-h] [--template] [--pdf PDF] [--invoice INVOICE] [--config CONFIG]
 
@@ -27,3 +28,8 @@ options:
 
 python -m invoiceonator --config config_templates.yaml  --invoice invoice_templates.yaml --pdf invoice.pdf
 ```
+
+
+## Example PDF
+
+![PDF](INV001.pdf)
