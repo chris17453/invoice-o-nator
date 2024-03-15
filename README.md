@@ -29,7 +29,6 @@ options:
 python -m invoiceonator --config config_templates.yaml  --invoice invoice_templates.yaml --pdf invoice.pdf
 ```
 
-
 ## Example PDF
 
-![PDF](INV001.pdf)
+[Example PDF](./INV001.pdf)
