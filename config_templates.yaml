@@ -1,0 +1,29 @@
+bill_top: 100
+business_info:
+  address1: 1234 Main ST
+  address2: Walker, AL, 000001
+  email: bob@acme.com
+  name: Acme LMTD
+  phone: 123-456-7890
+business_info_left: 180
+business_info_top: 40
+col_widths:
+- 0.2
+- 0.5
+- 0.1
+- 0.1
+- 0.1
+footer: Thank you for your patronage.
+footer_position: 30
+invoice_top: 60
+left_margin: 50
+line_spacing: 18
+logo_left: 20
+logo_max_width: 500
+logo_path: assets/logo.png
+logo_top: 20
+right_margin: 50
+table_top: 630
+top_margin: 50
+total_table_left: 200
+total_table_top: 700

@@ -1,0 +1,25 @@
+customer:
+  address1: 123 Main St
+  address2: Anytown, USA
+  attention: John Doe
+  email: john@example.com
+  name: Example Company
+  phone: (555) 555-5555
+date: '2024-03-15'
+items:
+- description: Product A
+  item: Product
+  price: 100
+  quantity: 2
+  total: 200
+- description: Service B
+  item: Service
+  price: 50
+  quantity: 3
+  total: 150
+number: INV001
+period: March 2024
+totals:
+  discount: 0
+  subtotal: 350
+  total: 350
