@@ -18,10 +18,10 @@ footer_position: 30
 invoice_top: 60
 left_margin: 50
 line_spacing: 18
-logo_left: 20
-logo_max_width: 500
 logo_path: assets/acme_logo.png
-logo_top: 20
+logo_max_width: 50
+logo_top: 70
+logo_left: 320
 right_margin: 50
 table_top: 630
 top_margin: 50
