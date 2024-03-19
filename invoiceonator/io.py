@@ -13,6 +13,10 @@ def save_config_to_yaml(config, yaml_path):
 def load_from_yaml(yaml_path):
     with open(yaml_path, 'r') as file:
         invoice = yaml.safe_load(file)
+    for item in invoice['items']:
+         if 'total' not in item or item['total']==0:
+              item['total']=item['price']*item['quantity']
+
     if invoice['totals']['subtotal'] == 0 and invoice['totals']['total'] == 0:
             # Calculate subtotal by summing up the item totals
             items_data = invoice['items']

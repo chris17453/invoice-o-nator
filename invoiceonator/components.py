@@ -103,7 +103,7 @@ def draw_totals(c,invoice,config):
 
     totals_table_data = [[Paragraph(cell[0]), Paragraph(cell[1])] for cell in totals_table_data]
 
-    totals_table = Table(totals_table_data, colWidths=[90, 60])
+    totals_table = Table(totals_table_data, colWidths=[100, 70])
     # Apply styles to the totals table
     totals_table.setStyle(TableStyle([
         ('ALIGN', (0, 0), (-1, -1), 'RIGHT'),
@@ -140,6 +140,12 @@ def draw_line_items(c,invoice,config):
         table_data.append([row['item'], row['description'], row['quantity'], price_formatted, total_formatted])
 
     # Add empty rows if necessary to make total rows 20
+    if 'notes' in invoice:
+            table_data.append(['', '', '', '',''])
+
+    for row in invoice['notes']:
+        table_data.append(['Note', row,'','', ''])
+
     while len(table_data) < 21:
         table_data.append(['', '', '', '', ''])
 
@@ -183,3 +189,4 @@ def draw_line_items(c,invoice,config):
     table.wrapOn(c, page_width, height)
     table.drawOn(c, config['left_margin'], height-config['table_top'] )
     
+

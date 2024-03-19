@@ -29,6 +29,11 @@ options:
 python -m invoiceonator --config config_templates.yaml  --invoice invoice_templates.yaml --pdf invoice.pdf
 ```
 
+## Update
+
+- Added lines for notes
+- auto caculate totals on items and total box
+
 ## Example PDF
 
 [Example PDF](./INV001.pdf)
