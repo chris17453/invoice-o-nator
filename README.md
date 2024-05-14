@@ -26,7 +26,7 @@ options:
   --config CONFIG    Config yaml
 
 
-python -m invoiceonator --config config_templates.yaml  --invoice invoice_templates.yaml --pdf invoice.pdf
+invoiceonator --config config_templates.yaml  --invoice invoice_templates.yaml --pdf invoice.pdf
 ```
 
 ## Update

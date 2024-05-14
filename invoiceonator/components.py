@@ -141,10 +141,10 @@ def draw_line_items(c,invoice,config):
 
     # Add empty rows if necessary to make total rows 20
     if 'notes' in invoice:
-            table_data.append(['', '', '', '',''])
+       table_data.append(['', '', '', '',''])
 
-    for row in invoice['notes']:
-        table_data.append(['Note', row,'','', ''])
+       for row in invoice['notes']:
+           table_data.append(['Note', row,'','', ''])
 
     while len(table_data) < 21:
         table_data.append(['', '', '', '', ''])

@@ -166,3 +166,5 @@ WL*.pdf
 .vscod*
 Pipfile.lock
 assets/logo*
+all.py
+dist
